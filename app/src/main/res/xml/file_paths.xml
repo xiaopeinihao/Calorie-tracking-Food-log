@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 拍照落盘目录：filesDir/photos（见 PhotoStorage） -->
+    <files-path name="meal_photos" path="photos/" />
+    <cache-path name="cache_photos" path="photos/" />
+    <!-- CSV 导出目录：getExternalFilesDir(DIRECTORY_DOCUMENTS) -->
+    <external-files-path name="exports" path="Documents/" />
+</paths>

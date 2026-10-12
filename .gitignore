@@ -1,0 +1,59 @@
+# ============================================================
+#  构建产物 / 本机相关（不应进版本库）
+# ============================================================
+/app/build/
+/build/
+/.gradle/
+/.kotlin/
+/captures/
+/local.properties
+*.apk
+*.aab
+*.ap_
+build.log
+.idea/
+*.iml
+.DS_Store
+
+# 发布用的安装包每个约 66MB，交给 build 产出，不入库
+/dist/*.apk
+
+# ============================================================
+#  开发草稿区 tools/data —— **整个目录排除**
+#
+#  这里放的是数据生成过程中的中间件与真机抓取物，其中包含
+#  个人数据与凭据，公开仓库绝不能带上：
+#    ai_config.xml          app prefs 导出，**含真实 API Key（明文）**
+#    device_calorie.db      真机数据库拷贝，**含本人饮食记录**
+#    migration_probe.db     迁移测试库
+#    ai*.xml / b*.xml / c*.xml / ui*.xml / qi*.xml …
+#                           几十个 uiautomator 层级导出，**含界面文本**
+#    food-test.jpg          测试用照片
+#    pipeline.log / alias-report.txt / *.xml 等中间输出
+#  以及体积过大、且各自带许可的原始数据：
+#    cfct.tar 136MB / cfct.tar.gz 129MB      中国食物成分表原始归档
+#    beecount.tar.gz 45MB / bc-flat/         第三方项目归档
+#    beecount/BeeCount-main/                 **第三方开源项目整包拷贝**
+#    usda/ 35MB+ / sr_legacy.zip             USDA 原始 CSV
+#
+#  唯一例外：reports/ 是本项目自己跑出来的质检产物，保留。
+# ============================================================
+/tools/data/*
+!/tools/data/reports/
+
+# ============================================================
+#  docs/screenshots —— 只保留逐张确认过「无真人、无相册内容、无密钥」
+#  的纯界面截图。其余为开发过程抓图，其中已确认不能公开的有：
+#    02-relaunch.png / cam2.png   取景框里是同事真人的办公室画面
+#    picker1.png                  系统相册选择器（含本人相册）
+#    ai1.png / ai2.png            模拟器桌面（带游戏广告，无文档价值）
+#  ============================================================
+/docs/screenshots/*
+!/docs/screenshots/01-home.png
+!/docs/screenshots/03-tab-home.png
+!/docs/screenshots/04-coldstart.png
+!/docs/screenshots/05-home.png
+!/docs/screenshots/06-confirm.png
+!/docs/screenshots/07-home-with-data.png
+!/docs/screenshots/cam1.png
+!/docs/screenshots/state.png

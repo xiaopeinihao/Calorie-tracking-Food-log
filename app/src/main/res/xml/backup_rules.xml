@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="calorie.db" />
+    <include domain="sharedpref" path="." />
+    <!-- AI 服务商 apiKey（明文存在 ai_config）属本机凭据，不随备份/换机迁移外流 -->
+    <exclude domain="sharedpref" path="ai_config.xml" />
+</full-backup-content>

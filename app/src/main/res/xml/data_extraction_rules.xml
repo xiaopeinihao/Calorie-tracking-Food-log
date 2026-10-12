@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="calorie.db" />
+        <include domain="sharedpref" path="." />
+        <!--
+            AI 服务商的 apiKey 以明文存在 ai_config 里（见 AiConfigStore）。
+            它是「本机凭据」，不该跟着云备份/换机迁移跑出去，
+            因此整份排除；换机后用户重填一次 Key 即可。
+            user_profile（身高体重等）仍随备份走，不受影响。
+        -->
+        <exclude domain="sharedpref" path="ai_config.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="calorie.db" />
+        <include domain="sharedpref" path="." />
+        <exclude domain="sharedpref" path="ai_config.xml" />
+    </device-transfer>
+</data-extraction-rules>

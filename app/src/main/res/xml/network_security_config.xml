@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  网络安全配置。
+
+  背景：AI 服务商地址完全由用户自己填（「我的 → AI 设置 → 自定义服务商」，
+  提示里明确写了 Ollama / one-api / vLLM）。这些自建服务极常见于
+  「http://192.168.x.x:11434/v1」这类局域网明文地址。
+
+  targetSdk ≥ 28 时系统默认**禁止明文**，而 OkHttp 抛出的
+  UnknownServiceException("CLEARTEXT communication ... not permitted") 会被我们
+  归类成「网络错误」——用户只看到「网络错误」，完全猜不到是被系统拦了明文。
+
+  所以这里放行明文。风险可控的理由：本 App 的网络出口**只有**用户自己配置的
+  那一个 AI 接口（没有埋点、没有第三方 SDK、没有广告），不存在「被中间人
+  顺带窃取其它流量」的面。官方预设的 8 个服务商地址全是 https，
+  明文只可能出现在用户明确填写的自建地址上。
+
+  若将来接入任何第三方网络 SDK，必须把这里改成按域名白名单放行。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

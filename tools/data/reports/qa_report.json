@@ -1,0 +1,507 @@
+{
+ "generatedAt": "2026-10-09T17:49:58+08:00",
+ "counts": {
+  "cfctAccepted": 1656,
+  "composedDishes": 42,
+  "usdaAccepted": 165,
+  "usdaNamingMisses": 0,
+  "usdaNamingDuplicates": 0,
+  "rejected": 21,
+  "duplicateIds": 0,
+  "imputedZeroRows": 26
+ },
+ "rejected": [
+  {
+   "name": "蜂胶液",
+   "code": "219037",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "蜂王浆",
+   "code": "219041",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "麻子籽",
+   "code": "192011",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "松蘑（干）［松口蘑，松茸］",
+   "code": "051018",
+   "reason": "Atwater 自洽性超容差 46.3%"
+  },
+  {
+   "name": "元蘑（干）［亚侧耳、冬蘑、黄蘑］",
+   "code": "051053",
+   "reason": "Atwater 自洽性超容差 40.4%"
+  },
+  {
+   "name": "海冻菜（干）［石花菜，冻菜］",
+   "code": "052005",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "辣椒（小红尖辣椒）",
+   "code": "043121",
+   "reason": "Atwater 自洽性超容差 46.5%"
+  },
+  {
+   "name": "艾蒿",
+   "code": "048001",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "白花菜",
+   "code": "048002",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "白花桔梗",
+   "code": "048003",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "百里香（鲜）",
+   "code": "048007",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "刺楸（鲜）",
+   "code": "048012",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "豆腐柴（鲜）",
+   "code": "048020",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "独行菜（宽，鲜）",
+   "code": "048022",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "轮叶党参",
+   "code": "048029",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "牛至",
+   "code": "048034",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "喷瓜",
+   "code": "048037",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "婆罗门参（白，鲜）",
+   "code": "048038",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "婆罗门参（黑，鲜）［鸦葱］",
+   "code": "048039",
+   "reason": "缺少热量值"
+  },
+  {
+   "name": "茴芹（鲜）",
+   "code": "048073",
+   "reason": "Atwater 自洽性超容差 229.5%"
+  },
+  {
+   "name": "魔芋精粉［鬼芋粉，南星粉］",
+   "code": "022107",
+   "reason": "Atwater 自洽性超容差 79.8%"
+  }
+ ],
+ "usdaNamingMisses": [],
+ "usdaNamingDuplicates": [],
+ "atwaterExempt": [
+  "啤酒（Alcoholic beverage, beer, regular, all）能量含乙醇/有机酸，Atwater 不适用",
+  "红葡萄酒（Alcoholic beverage, wine, table, red）能量含乙醇/有机酸，Atwater 不适用",
+  "白葡萄酒（Alcoholic beverage, wine, table, white）能量含乙醇/有机酸，Atwater 不适用",
+  "清酒（Alcoholic beverage, rice (sake)）能量含乙醇/有机酸，Atwater 不适用"
+ ],
+ "usdaAmbiguousPicks": [
+  "全脂牛奶 -> 已选「Milk, whole, 3.25% milkfat, with added vitamin D」61.0 kcal；候选 3 条跨度 [61.0, 108.0]，例如 Milk, whole, 3.25% milkfat, with added vitamin D / Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D / Potatoes, mashed, prepared from granules, without milk, whole milk and margarine",
+  "脱脂牛奶 -> 已选「Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)」34.0 kcal；候选 4 条跨度 [34.0, 41.0]，例如 Milk, nonfat, fluid, protein fortified, with added vitamin A and vitamin D (fat free and skim) / Milk, nonfat, fluid, with added nonfat milk solids, vitamin A and vitamin D (fat free or skim) / Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",
+  "马苏里拉奶酪 -> 已选「Cheese, mozzarella, whole milk」299.0 kcal；候选 2 条跨度 [254.0, 299.0]，例如 Cheese, mozzarella, part skim milk / Cheese, mozzarella, whole milk",
+  "猪里脊（熟） -> 已选「Pork, fresh, loin, tenderloin, separable lean only, cooked, broiled」187.0 kcal；候选 2 条跨度 [143.0, 187.0]，例如 Pork, fresh, loin, tenderloin, separable lean only, cooked, broiled / Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted",
+  "热狗肠 -> 已选「Frankfurter, beef, heated」322.0 kcal；候选 4 条跨度 [109.0, 322.0]，例如 Frankfurter, beef, heated / Frankfurter, beef, low fat / Frankfurter, beef, pork, and turkey, fat free",
+  "金枪鱼（水浸罐头） -> 已选「Fish, tuna, light, canned in water, without salt, drained solids」116.0 kcal；候选 2 条跨度 [86.0, 116.0]，例如 Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program) / Fish, tuna, light, canned in water, without salt, drained solids",
+  "菠菜 -> 已选「Spinach, raw」23.0 kcal；候选 2 条跨度 [14.0, 23.0]，例如 New Zealand spinach, raw / Spinach, raw",
+  "西葫芦 -> 已选「Squash, summer, zucchini, includes skin, raw」17.0 kcal；候选 7 条跨度 [14.0, 29.0]，例如 Squash, summer, zucchini, includes skin, cooked, boiled, drained, with salt / Squash, summer, zucchini, includes skin, cooked, boiled, drained, without salt / Squash, summer, zucchini, includes skin, frozen, cooked, boiled, drained, with salt",
+  "笋瓜（butternut） -> 已选「Squash, winter, butternut, raw」45.0 kcal；候选 6 条跨度 [39.0, 57.0]，例如 Squash, winter, butternut, cooked, baked, with salt / Squash, winter, butternut, cooked, baked, without salt / Squash, winter, butternut, frozen, cooked, boiled, with salt",
+  "梨 -> 已选「Pears, raw」57.0 kcal；候选 7 条跨度 [41.0, 67.0]，例如 Pears, raw / Pears, raw, bartlett (Includes foods for USDA's Food Distribution Program) / Pears, raw, bosc (Includes foods for USDA's Food Distribution Program)",
+  "西柚 -> 已选「Grapefruit, raw, pink and red, all areas」42.0 kcal；候选 2 条跨度 [32.0, 42.0]，例如 Grapefruit, raw, pink and red and white, all areas / Grapefruit, raw, pink and red, all areas",
+  "豆浆（原味） -> 已选「Soymilk, original and vanilla, unfortified」54.0 kcal；候选 2 条跨度 [43.0, 54.0]，例如 Soymilk, original and vanilla, unfortified / Soymilk, original and vanilla, with added calcium, vitamins A and D",
+  "猪油 -> 已选「Lard」902.0 kcal；候选 11 条跨度 [32.0, 902.0]，例如 Collards, cooked, boiled, drained, with salt / Collards, cooked, boiled, drained, without salt / Collards, frozen, chopped, cooked, boiled, drained, with salt",
+  "燕麦棒／能量棒 -> 已选「Snacks, granola bars, hard, plain」471.0 kcal；候选 27 条跨度 [342.0, 531.0]，例如 Snacks, granola bar, GENERAL MILLS NATURE VALLEY, SWEET&SALTY NUT, peanut / Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, CHEWY TRAIL MIX / Snacks, granola bar, GENERAL MILLS, NATURE VALLEY, with yogurt coating",
+  "牛奶巧克力 -> 已选「Candies, milk chocolate」535.0 kcal；候选 5 条跨度 [390.0, 549.0]，例如 Candies, milk chocolate / Candies, milk chocolate coated coffee beans / Candies, milk chocolate coated peanuts",
+  "香草冰淇淋 -> 已选「Ice creams, vanilla」207.0 kcal；候选 2 条跨度 [207.0, 249.0]，例如 Ice creams, vanilla / Ice creams, vanilla, rich",
+  "蜂蜜 -> 已选「Honey」304.0 kcal；候选 36 条跨度 [30.0, 594.0]，例如 Beverages, tea, green, ready to drink, ginseng and honey, sweetened / Candies, NESTLE, BIT-O'-HONEY Candy Chews / Candies, TOBLERONE, milk chocolate with honey and almond nougat",
+  "番茄汁 -> 已选「Tomato juice, canned, with salt added」17.0 kcal；候选 3 条跨度 [17.0, 48.0]，例如 Beverages, Clam and tomato juice, canned / Tomato juice, canned, with salt added / Tomato juice, canned, without salt added",
+  "淡啤酒 -> 已选「Alcoholic beverage, beer, light」29.0 kcal；候选 4 条跨度 [27.0, 46.0]，例如 Alcoholic beverage, beer, light / Alcoholic beverage, beer, light, BUD LIGHT / Alcoholic beverage, beer, light, higher alcohol",
+  "红葡萄酒 -> 已选「Alcoholic beverage, wine, table, red」85.0 kcal；候选 16 条跨度 [74.0, 88.0]，例如 Alcoholic Beverage, wine, table, red, Barbera / Alcoholic Beverage, wine, table, red, Burgundy / Alcoholic Beverage, wine, table, red, Cabernet Franc",
+  "白葡萄酒 -> 已选「Alcoholic beverage, wine, table, white」82.0 kcal；候选 14 条跨度 [76.0, 112.0]，例如 Alcoholic beverage, wine, table, white / Alcoholic beverage, wine, table, white, Chardonnay / Alcoholic beverage, wine, table, white, Chenin Blanc",
+  "能量饮料 -> 已选「Beverages, Energy drink, AMP」46.0 kcal；候选 12 条跨度 [1.0, 62.0]，例如 Beverages, Energy Drink with carbonated water and high fructose corn syrup / Beverages, Energy Drink, Monster, fortified with vitamins C, B2, B3, B6, B12 / Beverages, Energy Drink, sugar free",
+  "芝士汉堡 -> 已选「Fast foods, cheeseburger; single, regular patty; plain」308.0 kcal；候选 3 条跨度 [254.0, 308.0]，例如 Fast foods, cheeseburger; single, regular patty, with condiments / Fast foods, cheeseburger; single, regular patty, with condiments and vegetables / Fast foods, cheeseburger; single, regular patty; plain",
+  "潜艇三明治 -> 已选「Fast foods, submarine sandwich, ham on white bread with lettuce and tomato」151.0 kcal；候选 4 条跨度 [151.0, 213.0]，例如 Fast foods, submarine sandwich, cold cut on white bread with lettuce and tomato / Fast foods, submarine sandwich, ham on white bread with lettuce and tomato / Fast foods, submarine sandwich, oven roasted chicken on white bread with lettuce and tomato"
+ ],
+ "usdaSkippedCoveredByCfct": [
+  "黄油（含盐）",
+  "藜麦（熟）",
+  "大麦（熟）",
+  "玉米面",
+  "鸡蛋",
+  "鸡腿（熟，带皮）",
+  "鸡翅（熟，带皮）",
+  "烤鸡（带皮）",
+  "猪里脊（熟）",
+  "猪肉（里脊，生）",
+  "火腿（熟）",
+  "香肠（意式）",
+  "热狗肠",
+  "羊肉（腿，熟）",
+  "金枪鱼（水浸罐头）",
+  "金枪鱼（油浸罐头）",
+  "鳕鱼（太平洋，生）",
+  "罗非鱼（生）",
+  "鳟鱼（生）",
+  "鲭鱼（生）",
+  "沙丁鱼（罐头）",
+  "蟹肉（罐头）",
+  "龙虾（熟）",
+  "生蚝（太平洋，生）",
+  "蛤蜊（生）",
+  "扇贝（生）",
+  "鱿鱼（生）",
+  "海带（生）",
+  "螺旋藻（干）",
+  "西兰花",
+  "菠菜",
+  "生菜（罗马）",
+  "番茄",
+  "黄瓜（带皮）",
+  "胡萝卜",
+  "洋葱",
+  "大蒜",
+  "白蘑菇",
+  "香菇（熟）",
+  "青豆",
+  "四季豆",
+  "大白菜（中国）",
+  "茄子",
+  "西葫芦",
+  "南瓜",
+  "芹菜",
+  "芦笋",
+  "羽衣甘蓝",
+  "姜",
+  "秋葵",
+  "笋瓜（butternut）",
+  "苹果（带皮）",
+  "苹果（去皮）",
+  "香蕉",
+  "葡萄",
+  "草莓",
+  "西瓜",
+  "梨",
+  "芒果",
+  "樱桃",
+  "柠檬",
+  "菠萝",
+  "哈密瓜",
+  "李子",
+  "木瓜",
+  "石榴",
+  "无花果（生）",
+  "葡萄干（无核）",
+  "枣（椰枣）",
+  "黄豆（干）",
+  "毛豆（熟）",
+  "豆腐（北豆腐／老豆腐）",
+  "豆腐（嫩豆腐）",
+  "豆浆（原味）",
+  "鹰嘴豆（熟）",
+  "黑豆（熟）",
+  "扁豆（熟）",
+  "绿豆（熟）",
+  "青豆（熟）",
+  "核桃",
+  "腰果",
+  "开心果",
+  "花生（生）",
+  "榛子",
+  "松子",
+  "栗子（熟）",
+  "橄榄油",
+  "菜籽油",
+  "椰子油",
+  "芝麻油",
+  "玉米油",
+  "猪油",
+  "炸鸡块"
+ ],
+ "nameDropped": [
+  "奶油 -> 丢弃 cfct:105008，保留 cfct:105001",
+  "酥油 -> 丢弃 cfct:105009，保留 cfct:105007",
+  "栗子［板栗］ -> 丢弃 cfct:071028，保留 cfct:071027",
+  "栗子［板栗］ -> 丢弃 cfct:071029，保留 cfct:071027",
+  "栗子［板栗］ -> 丢弃 cfct:071030，保留 cfct:071027",
+  "栗子［板栗］ -> 丢弃 cfct:071031，保留 cfct:071027",
+  "腐竹 -> 丢弃 cfct:031528，保留 cfct:031507",
+  "葡萄柚［西柚］ -> 丢弃 cfct:064304，保留 cfct:064303",
+  "桂圆（干） -> 丢弃 cfct:065021，保留 cfct:065007",
+  "木瓜［番木瓜］ -> 丢弃 cfct:065027，保留 cfct:065012",
+  "香蕉（红皮） -> 丢弃 cfct:065032，保留 cfct:065031",
+  "牛肉（里脊肉）［牛柳］ -> 丢弃 cfct:082112，保留 cfct:082105",
+  "猪肚 -> 丢弃 cfct:081213，保留 cfct:081202",
+  "黄蘑（干） -> 丢弃 cfct:051034，保留 cfct:051006",
+  "红心萝卜［心里美］ -> 丢弃 cfct:041110，保留 cfct:041105",
+  "黄豆芽 -> 丢弃 cfct:042205，保留 cfct:042202",
+  "藜麦（散装） -> 丢弃 cfct:019014，保留 cfct:019013",
+  "香米 -> 丢弃 cfct:012215，保留 cfct:012213",
+  "海参（干） -> 丢弃 cfct:129020，保留 cfct:129002",
+  "鲢鱼［白鲢、胖子、连子鱼］ -> 丢弃 cfct:121132，保留 cfct:121122",
+  "鲫鱼［喜头鱼、海附鱼］ -> 丢弃 cfct:121133，保留 cfct:121123",
+  "黄颡鱼［戈牙鱼、黄鳍鱼］ -> 丢弃 cfct:121137，保留 cfct:121106",
+  "鳊鱼［鲂鱼、武昌鱼］ -> 丢弃 cfct:121146，保留 cfct:121126"
+ ],
+ "usdaCrosscheck": {
+  "available": true,
+  "rows": [
+   {
+    "name": "鸡蛋（代表值）",
+    "usda": "Egg, whole, raw, frozen, salted, pasteurized",
+    "cfct": {
+     "kcal": 139.0,
+     "protein": 13.1,
+     "fat": 8.6,
+     "carbs": 2.4
+    },
+    "usdaValues": {
+     "fat": 10.07,
+     "carbs": 0.83,
+     "kcal": 138.0,
+     "protein": 10.97
+    },
+    "kcalDiff": 0.007,
+    "proteinDiff": 0.194,
+    "status": "ok"
+   },
+   {
+    "name": "稻米（代表值）",
+    "usda": "Rice, white, long-grain, regular, raw, enriched",
+    "cfct": {
+     "kcal": 346.0,
+     "protein": 7.9,
+     "fat": 0.9,
+     "carbs": 77.2
+    },
+    "usdaValues": {
+     "fat": 0.66,
+     "carbs": 79.95,
+     "kcal": 365.0,
+     "protein": 7.13
+    },
+    "kcalDiff": -0.052,
+    "proteinDiff": 0.108,
+    "status": "ok"
+   },
+   {
+    "name": "纯牛奶（代表值，全脂）",
+    "usda": "Milk, whole, 3.25% milkfat, with added vitamin D",
+    "cfct": {
+     "kcal": 65.0,
+     "protein": 3.3,
+     "fat": 3.6,
+     "carbs": 4.9
+    },
+    "usdaValues": {
+     "fat": 3.25,
+     "carbs": 4.8,
+     "kcal": 61.0,
+     "protein": 3.15
+    },
+    "kcalDiff": 0.066,
+    "proteinDiff": 0.048,
+    "status": "ok"
+   },
+   {
+    "name": "香蕉［甘蕉］",
+    "usda": "Bananas, raw",
+    "cfct": {
+     "kcal": 93.0,
+     "protein": 1.4,
+     "fat": 0.2,
+     "carbs": 22.0
+    },
+    "usdaValues": {
+     "carbs": 22.84,
+     "kcal": 89.0,
+     "protein": 1.09,
+     "fat": 0.33
+    },
+    "kcalDiff": 0.045,
+    "proteinDiff": 0.284,
+    "status": "ok"
+   },
+   {
+    "name": "苹果（代表值）",
+    "usda": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+    "cfct": {
+     "kcal": 53.0,
+     "protein": 0.4,
+     "fat": 0.2,
+     "carbs": 13.7
+    },
+    "usdaValues": {
+     "carbs": 13.81,
+     "kcal": 52.0,
+     "fat": 0.17,
+     "protein": 0.26
+    },
+    "kcalDiff": 0.019,
+    "proteinDiff": 0.538,
+    "status": "ok"
+   },
+   {
+    "name": "马铃薯［土豆、洋芋］",
+    "usda": "Potatoes, flesh and skin, raw",
+    "cfct": {
+     "kcal": 81.0,
+     "protein": 2.6,
+     "fat": 0.2,
+     "carbs": 17.8
+    },
+    "usdaValues": {
+     "fat": 0.09,
+     "kcal": 77.0,
+     "protein": 2.05,
+     "carbs": 17.49
+    },
+    "kcalDiff": 0.052,
+    "proteinDiff": 0.268,
+    "status": "ok"
+   },
+   {
+    "name": "花生油",
+    "usda": "Oil, peanut, salad or cooking",
+    "cfct": {
+     "kcal": 899.0,
+     "protein": 0.0,
+     "fat": 99.9,
+     "carbs": 0.0
+    },
+    "usdaValues": {
+     "fat": 100.0,
+     "carbs": 0.0,
+     "kcal": 884.0,
+     "protein": 0.0
+    },
+    "kcalDiff": 0.017,
+    "proteinDiff": null,
+    "status": "ok"
+   },
+   {
+    "name": "黄豆［大豆］",
+    "usda": "Soybeans, mature seeds, raw",
+    "cfct": {
+     "kcal": 390.0,
+     "protein": 35.0,
+     "fat": 16.0,
+     "carbs": 34.2
+    },
+    "usdaValues": {
+     "carbs": 30.16,
+     "kcal": 446.0,
+     "protein": 36.49,
+     "fat": 19.94
+    },
+    "kcalDiff": -0.126,
+    "proteinDiff": -0.041,
+    "status": "ok"
+   },
+   {
+    "name": "白萝卜（鲜）［莱菔］",
+    "usda": "Radishes, raw",
+    "cfct": {
+     "kcal": 16.0,
+     "protein": 0.7,
+     "fat": 0.1,
+     "carbs": 4.0
+    },
+    "usdaValues": {
+     "carbs": 3.4,
+     "kcal": 16.0,
+     "protein": 0.68,
+     "fat": 0.1
+    },
+    "kcalDiff": 0.0,
+    "proteinDiff": 0.029,
+    "status": "ok"
+   },
+   {
+    "name": "番茄［西红柿］",
+    "usda": "Tomatoes, red, ripe, raw, year round average",
+    "cfct": {
+     "kcal": 15.0,
+     "protein": 0.9,
+     "fat": 0.2,
+     "carbs": 3.3
+    },
+    "usdaValues": {
+     "carbs": 3.89,
+     "kcal": 18.0,
+     "fat": 0.2,
+     "protein": 0.88
+    },
+    "kcalDiff": -0.167,
+    "proteinDiff": 0.023,
+    "status": "ok"
+   },
+   {
+    "name": "小麦粉（代表值）",
+    "usda": "Wheat flour, white, all-purpose, enriched, bleached",
+    "cfct": {
+     "kcal": 359.0,
+     "protein": 12.4,
+     "fat": 1.7,
+     "carbs": 74.1
+    },
+    "usdaValues": {
+     "protein": 10.33,
+     "fat": 0.98,
+     "carbs": 76.31,
+     "kcal": 364.0
+    },
+    "kcalDiff": -0.014,
+    "proteinDiff": 0.2,
+    "status": "ok"
+   },
+   {
+    "name": "猪肉（代表值，fat30g）",
+    "usda": "Pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, raw",
+    "cfct": {
+     "kcal": 331.0,
+     "protein": 15.1,
+     "fat": 30.1,
+     "carbs": 0.0
+    },
+    "usdaValues": {
+     "fat": 14.95,
+     "carbs": 0.0,
+     "kcal": 216.0,
+     "protein": 18.95
+    },
+    "kcalDiff": 0.532,
+    "proteinDiff": -0.203,
+    "status": "review"
+   }
+  ]
+ }
+}

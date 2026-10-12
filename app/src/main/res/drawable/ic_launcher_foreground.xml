@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- A simple flame mark centered in the adaptive-icon safe zone -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30 C60,40 68,44 68,56 C68,66 62,72 54,72 C46,72 40,66 40,56 C40,50 44,46 46,42 C48,48 52,48 52,44 C52,39 52,34 54,30 Z" />
+    <path
+        android:fillColor="#FF8F5E"
+        android:pathData="M54,48 C57,53 60,55 60,61 C60,66 57,69 54,69 C51,69 48,66 48,61 C48,57 51,54 54,48 Z" />
+</vector>
